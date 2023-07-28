@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,16 +23,9 @@ namespace SmartPro_4
             if (calc_num < 10)
             {
                 Console.Clear();
-                Console.WriteLine("First: "+first_num);
-                Console.WriteLine("Second: "+second_num);
+                Console.WriteLine("First: " + first_num);
+                Console.WriteLine("Second: " + second_num);
                 Console.WriteLine(calc_num + " is less than 10.");
-            }            
-            else if (calc_num == 10)
-            {
-                Console.Clear();
-                Console.WriteLine("First: "+first_num);
-                Console.WriteLine("Second: "+second_num);
-                Console.WriteLine(calc_num+" is equal to 10.");
             }
             else if (calc_num > 10)
             {
@@ -41,9 +34,14 @@ namespace SmartPro_4
                 Console.WriteLine("Second: " + second_num);
                 Console.WriteLine(calc_num+ " is greater than 10.");
             }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("First: " + first_num);
+                Console.WriteLine("Second: " + second_num);
+                Console.WriteLine(calc_num + " is equal to 10.");
+            }
             Console.ReadKey();
-
-
         }
     }
 }
